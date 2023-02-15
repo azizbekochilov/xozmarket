@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
 
 .navbar {
@@ -116,6 +117,8 @@
     font-size: 15px;
     margin-left: 1px;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .nav__start_link:hover {
@@ -123,15 +126,15 @@
 }
 
 .nav__start_link_icon {
-    position: absolute;
-    padding-right: 10px;
+    /* position: absolute; */
+    padding-right: 0px;
     font-size: 25px;
 }
 
 .nav__start_link_ul {
     list-style-type: none;
     text-align: none;
-    margin-top: -22px;
+    margin-left: 10px;
 }
 
 .nav__img_img {
@@ -176,6 +179,8 @@
 .nav__end_link {
     color: white;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .nav__end_link:hover {
@@ -183,17 +188,11 @@
 }
 
 .nav__end_link_icon {
-    position: absolute;
     font-size: 28px;
-    margin-top: 17px;
-    margin-left: -5px;
+    margin-right: 12px;
 }
 
 .nav__end_link_ul {
     list-style-type: none;
     margin-left: 1px;
 }
-
-
-
-
