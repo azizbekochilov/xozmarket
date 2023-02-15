@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Layout from "./pages/Layout";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Karusel from "./components/Karusel";
