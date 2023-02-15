@@ -1,8 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-// import Layout from "./components/Layout";
+import Layout from "./pages/Layout";
 import Navbar from "./components/Navbar";
-// import Home from "./pages/Home";
+import Home from "./pages/Home";
 import Karusel from "./components/Karusel";
 import Footer from "./components/Footer"
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <Route path="/footer" element={<Footer/>} />
       <Route path="/navbar" element={<Navbar/>} />
       <Route path="/kar" element={<Karusel/>}/>
-      {/* <Route path="/" element={<Home/>} /> */}
+      <Route path="/" element={<Home/>} />
     </Routes>
 
   );

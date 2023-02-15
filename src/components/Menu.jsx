@@ -1,12 +1,13 @@
 import React from 'react'
 
-const Karusel = () => {
+
+const Menu = () => {
   return (
     <div>
-        <h1>Karusel</h1>
+        <h1>Menu</h1>
         <hr />
     </div>
   )
 }
 
-export default Karusel
+export default Menu
