@@ -7,10 +7,10 @@ import Navbar from '../components/Navbar'
 const Home = () => {
   return (
     <div>
-    <Navbar />
-    <Menu />
-    <Karusel/>
-    <Footer />
+      <Navbar />
+      <Menu />
+      <Karusel />
+      <Footer />
     </div>
   )
 }
