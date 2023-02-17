@@ -92,6 +92,8 @@ const Footer = () => {
               <a href="tel:+998914422317" class="footer__tel">
                 +998(91)442-23-17
               </a>
+            </div>
+            <div className="">
               <a href="" class="footer__address">
                 Bukhara - MONDAY_Labs
               </a>

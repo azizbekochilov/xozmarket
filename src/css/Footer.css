@@ -137,7 +137,8 @@ padding: 20px ;
   color: #ABACAB;
   font-size: 13px;
   position: relative;
- margin: 0 20px;
+ padding-bottom: 140px;
+
 }
 .footer__comment a{
   color: #4B4B4B;
