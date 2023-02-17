@@ -1,6 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../css/Footer.css";
+import { BsTwitter } from "react-icons/bs";
+import { FaFacebookF } from "react-icons/fa";
+import { SiOdnoklassniki } from "react-icons/si";
+import { FiInstagram } from "react-icons/fi";
+import { BsSearch } from "react-icons/bs";
+import { SlSocialVkontakte } from "react-icons/sl";
+import { RiFileEditLine } from "react-icons/ri";
 
 const Footer = () => {
   return (
@@ -17,29 +24,29 @@ const Footer = () => {
             </Link>
             <div className="footer__logo_text">
               <p>
-                Интернет-магазин <br /> товаров для <br /> дома
+                Интернет-магазин <br /> товаров для <br /> дома.
               </p>
             </div>
             <div className="footer__comment">
-              <Link to="*" >
-                <i className="">ICON</i>
+              <Link to="*">
+                <RiFileEditLine className="is-16" />
                 Поделитесь <br /> мнением
               </Link>
             </div>
           </div>
           <div className="column is-33 footer-middle">
-            <div className="footer__searchS">
+            <div>
               <input
                 type="text"
                 className="footer__search"
                 placeholder="Шуруповерт BOSCH"
               />
               <button type="submit" className="button__search">
-                <i className="">ICON</i>
+                <BsSearch />
               </button>
             </div>
-            <div class="footer_menu_links">
-              <ul class="footer_menu_links__ul">
+            <div class="footer_menu_links columns">
+              <ul class="footer_menu_links__ul column is-50">
                 <li class="footer_menu_links__li">
                   <a>О компании</a>
                 </li>
@@ -60,7 +67,7 @@ const Footer = () => {
                   <a>Партнеры</a>
                 </li>
               </ul>
-              <ul class="footer_menu_links__ul">
+              <ul class="footer_menu_links__ul column is-50">
                 {" "}
                 <li class="footer_menu_links__li">
                   <a>Договор оферты</a>
@@ -88,6 +95,27 @@ const Footer = () => {
               <a href="" class="footer__address">
                 Bukhara - MONDAY_Labs
               </a>
+            </div>
+            <div className="footer-social">
+              <div className="marleft-14">
+                <SlSocialVkontakte />
+              </div>
+              <div className="marleft-14">
+                {" "}
+                <BsTwitter />
+              </div>
+              <div className="marleft-14">
+                {" "}
+                <FaFacebookF />
+              </div>
+              <div className="marleft-14">
+                {" "}
+                <SiOdnoklassniki />
+              </div>
+              <div className="marleft-14">
+                {" "}
+                <FiInstagram />
+              </div>
             </div>
           </div>
         </div>
