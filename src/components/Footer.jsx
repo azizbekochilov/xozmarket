@@ -4,34 +4,40 @@ import "../css/Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <section className="section ">
       <div className="footer">
-        <div className="footer__inner">
-          <div className="footer-left">
+        <div className="columns">
+          <div className="column is-33 footer-left">
             <Link to="*" className="footer__logo">
               <img
+                className="footer__logo"
                 src="https://xozm.ru/local/templates/main/img/svg/logo.svg"
                 alt=""
               />
             </Link>
-            <div className="footer__search">
+            <div className="footer__logo_text">
+              <p>
+                Интернет-магазин <br /> товаров для <br /> дома
+              </p>
+            </div>
+            <div className="footer__comment">
+              <Link to="*" >
+                <i className="">ICON</i>
+                Поделитесь <br /> мнением
+              </Link>
+            </div>
+          </div>
+          <div className="column is-33 footer-middle">
+            <div className="footer__searchS">
               <input
                 type="text"
                 className="footer__search"
                 placeholder="Шуруповерт BOSCH"
               />
-              <button type="submit" className="button__search"></button>
+              <button type="submit" className="button__search">
+                <i className="">ICON</i>
+              </button>
             </div>
-            <div className="footer__logo_text">
-              <p>Интернет-магазин товаров для дома</p>
-            </div>
-            <div className="footer__icon">
-              <i></i>
-            </div>
-            <Link to="*">
-              <i className=""></i>
-              Поделитесь мнением
-            </Link>
             <div class="footer_menu_links">
               <ul class="footer_menu_links__ul">
                 <li class="footer_menu_links__li">
@@ -74,7 +80,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="footer-right">
+          <div className="column is-33 footer-right">
             <div class="footer__contact">
               <a href="tel:+998914422317" class="footer__tel">
                 +998(91)442-23-17
@@ -86,11 +92,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="footer__line">
-        © 2016-2023. Интернет-магазин ХозМаркет. Все права защищены.
-      </div>
-    </footer>
+    </section>
   );
 };
-
 export default Footer;
