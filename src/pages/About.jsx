@@ -24,7 +24,7 @@ const About = () => {
         </div>
       </div>
       <div id="history">
-        e
+        
       </div>
       <Footer />
     </div>
