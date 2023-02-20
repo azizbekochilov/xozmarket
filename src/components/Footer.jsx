@@ -35,15 +35,15 @@ const Footer = () => {
             </div>
           </div>
           <div className="column is-33 footer-middle">
-            <div>
+            <div className='footer-search'>
               <input
                 type="text"
-                className="footer__search"
+                className="footer-search__input"
                 placeholder="Шуруповерт BOSCH"
               />
-              <button type="submit" className="button__search">
+              <div className="footer-seach__icon">
                 <BsSearch />
-              </button>
+              </div>
             </div>
             <div class="footer_menu_links columns">
               <ul class="footer_menu_links__ul column is-50">

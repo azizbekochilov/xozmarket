@@ -88,6 +88,10 @@ padding: 20px ;
   text-decoration: none;
 }
 .footer__search {
+  width: 293px !important;
+  position: relative;
+}
+.footer-search__input {
   outline: none;
   font-weight: 100px;
   border: 1px solid #cac8c7;
@@ -96,7 +100,6 @@ padding: 20px ;
   padding: 9px;
   font-size: 17px;
   color: #cac8c7;
-  margin-top: 20px;
   padding-right: 100px;
 }
 .footer__search::placeholder {
@@ -164,4 +167,20 @@ padding: 20px ;
   margin-left: 8px;
   display: inline;
 cursor: pointer;
+}
+.button__search{
+ font-size: 25px;
+
+}
+.footer-search {
+  position: relative;
+}
+.footer-seach__icon {
+  position: absolute;
+  right: 140px;
+  top: 8px;
+  font-size: 22px;
+}
+.footer-middle{
+  padding-top: 35px;
 }
