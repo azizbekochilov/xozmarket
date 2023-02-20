@@ -4,18 +4,17 @@
     box-sizing: border-box;
 }
 
-.img1 {
-    
+.carusel__div {
     width: 800px;
-    height: 400px;
+    height: 350px;
 }
 
-.car {
+.carusel {
     width: 900px;
     height: 100px;
 }
 
-.a {
+.Carusel {
     background: linear-gradient(to bottom, #ffbf00 0%, #ffbf00 100%) !important;
     width: 100%;
     height: 400px;

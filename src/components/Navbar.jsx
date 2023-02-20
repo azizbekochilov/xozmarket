@@ -60,7 +60,7 @@ function Navbar({ categories }) {
       <div className="nav">
         <div className="navv">
           <div className="nav__start">
-            <Link to="/" >
+            <Link to="/klub" >
               <div className="nav__start_link">
                 <FontAwesomeIcon icon={faUserGroup} className='nav__start_link_icon' />
                 <ul className="nav__start_link_ul">
