@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carusel__div {
+    width: 800px;
+    height: 350px;
+}
+
+.carusel {
+    width: 900px;
+    height: 100px;
+}
+
+.Carusel {
+    background: linear-gradient(to bottom, #ffbf00 0%, #ffbf00 100%) !important;
+    width: 100%;
+    height: 350px;
+}
