@@ -93,7 +93,7 @@ const Footer = () => {
                 +998(91)442-23-17
               </a>
             </div>
-            <div className="">
+            <div className="footer__addres">
               <a href="" class="footer__address">
                 Bukhara - MONDAY_Labs
               </a>

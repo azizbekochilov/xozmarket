@@ -184,3 +184,8 @@ cursor: pointer;
 .footer-middle{
   padding-top: 35px;
 }
+.footer__addres{
+  text-align: center;
+  padding-right: 190px;
+  margin-top: -100px;
+}
