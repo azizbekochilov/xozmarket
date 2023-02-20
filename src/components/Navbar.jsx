@@ -30,13 +30,13 @@ function Navbar({ categories }) {
         <div className="navbar__start">
           <select name="" id="" className="navbar__start_select">
             <option value="">Сасово</option>
-            <option value="">slova</option>
+            <option value="">Рязань</option>
           </select>
           <strong>
             {" "}
-            <a href="tel: 8 (4912) 777-695" className="navbar__start_number">
+            <a href="tel:+998914422317" className="navbar__start_number">
               {" "}
-              +998(91)4422317
+              +998(91)442-23-17
             </a>
           </strong>
         </div>
@@ -107,7 +107,6 @@ function Navbar({ categories }) {
           </div>
         ))}
       </div>
-
     </React.StrictMode>
   );
 }
