@@ -24,7 +24,7 @@ const About = () => {
         </div>
       </div>
       <div id="history">
-        
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, totam?</p>
       </div>
       <Footer />
     </div>
