@@ -8,7 +8,6 @@ function App() {
   return (
     <Routes>
       <Route path="/kar" element={<Karusel/>}/>
-      <Route path="/kar" element={<Karusel/>}/>
       <Route path="/" element={<Home/>} />
     </Routes>
 

@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.promotion {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promotion__promotions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promotion__promotions_1 {
+    width: 255px;
+    height: 200px;
+    border: 1px solid  rgba(128, 128, 128, 0.311);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.promotion__promotions_1_p {
+    margin-left: 15px;
+}
+
+.promotion__promotions_1_img {
+    width: 155px;
+    height: 140px;
+}
+
+.bottom {
+    width: 100%;
+    height: 100px;
+    background-color: #F0F0F0;
+    border-top: solid rgba(128, 128, 128, 0.186) 1px;
+    border-bottom: solid rgba(128, 128, 128, 0.186) 1px;
+}
