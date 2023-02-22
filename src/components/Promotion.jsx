@@ -1,6 +1,7 @@
 import React from "react";
 import '../css/Promotion.css'
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
+// import logo from './public/img/logo.png'
 
 function Promotion() {
     return (
@@ -16,11 +17,18 @@ function Promotion() {
                         <img className="promotion__promotions_1_img" src="https://xozm.ru/upload/iblock/6a4/6a4476e51a6565fbbd378bb90a3fe306.jpg" alt="" />
                     </Link>
                     <Link className="promotion__promotions_1">
-                        <p  className="promotion__promotions_1_p">Бензиновый триммер от 5 990р!</p>
+                        <p className="promotion__promotions_1_p">Бензиновый триммер от 5 990р!</p>
                         <img className="promotion__promotions_1_img" src="https://xozm.ru/upload/iblock/25f/25f01333a5ef22fa038c6c8a9bea68df.jpg" alt="" />
                     </Link>
-                    <div className="promotion__promotions_1">
-                        hello
+                    <div className="promotion__promotions_2">
+                        <img className="promotion__promotions_2_img" src='img/odam.jpg' alt="" />
+                        <div className="promotion__promotions_2_person">
+                            <p className="promotion__promotions_2_person_h4">Иванова <br /> Зоя</p>
+                            <p className="promotion__promotions_2_person_p">персональный менеджер</p>
+                        </div>
+                        <div>
+                            <button>Начать чат</button>
+                        </div>
                     </div>
                 </div>
             </div>
