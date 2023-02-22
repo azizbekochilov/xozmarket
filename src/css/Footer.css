@@ -4,6 +4,10 @@
   box-sizing: border-box;
   list-style: none;
 }
+.footer{
+  padding-bottom: 100px;
+}
+
 .section {
   padding: 0px 40px;
   background-color: #363a3b;
@@ -76,7 +80,7 @@
   margin-bottom: 10px;
   cursor: pointer;
 }
-.footer_menu_links__li:hover{
+.footer_menu_links__li:hover {
   color: #fab900;
   transition: 0.5s all;
   background-color: red;
@@ -88,47 +92,45 @@
   color: #fab900;
   font-size: 27px;
   display: block;
-  margin-bottom: 100px;
+  margin: 20px 0;
   margin-top: 4px;
   position: relative;
   margin-left: 20px;
 }
-.footer__address{
+.footer__address {
   text-decoration: none;
-  color: #ABACAB;
+  color: #abacab;
   font-size: 13px;
   position: relative;
- padding-bottom: 140px;
-
+  margin: 60px 0;
 }
-.footer__comment a{
-  color: #4B4B4B;
+.footer__comment a {
+  color: #4b4b4b;
   text-decoration: none;
   font-size: 14px;
 }
-.footer__comment{
- text-align: left;
- padding-left: 170px;
-
+.footer__comment {
+  text-align: left;
+  padding-left: 170px;
 }
-.is-16{
+.is-16 {
   font-size: 16px;
 }
-.footer__comment link:hover{
+.footer__comment link:hover {
   color: #fab900;
   transition: 0.7s;
 }
-.footer-social{
+.footer-social {
   font-size: 24px;
+  margin:20px 0 50px 25px;
 }
-.marleft-14{
+.marleft-14 {
   margin-left: 8px;
   display: inline;
-cursor: pointer;
+  cursor: pointer;
 }
-.button__search{
- font-size: 25px;
-
+.button__search {
+  font-size: 25px;
 }
 .footer-search {
   position: relative;
@@ -140,11 +142,18 @@ cursor: pointer;
   font-size: 22px;
   cursor: pointer;
 }
-.footer-middle{
+.footer-middle {
   padding-top: 35px;
 }
-.footer__addres{
+.footer__addres {
   text-align: center;
   padding-right: 190px;
-  margin-top: -100px;
+  margin-top: 0px;
+}
+.footer__bottom {
+  padding-top: 27px;
+  margin-bottom: -55px;
+  border-top: 1px solid #3C3F40;
+  text-align: center;
+  font-size: 12px;
 }

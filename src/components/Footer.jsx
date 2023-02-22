@@ -24,7 +24,7 @@ const Footer = () => {
             </Link>
             <div className="footer__logo_text">
               <p>
-                Интернет-магазин <br /> товаров для <br /> дома.
+                Интернет-магазин товаров для <br /> дома.
               </p>
             </div>
             <div className="footer__comment">
@@ -35,7 +35,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="column is-33 footer-middle">
-            <div className='footer-search'>
+            <div className="footer-search">
               <input
                 type="text"
                 className="footer-search__input"
@@ -121,6 +121,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="footer__bottom">
+        <p className="footer__bottom_subtitle">
+          © 2016-2023. Интернет-магазин ХозМаркет. Все права защищены.
+        </p>
       </div>
     </section>
   );
