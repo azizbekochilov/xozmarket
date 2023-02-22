@@ -83,7 +83,6 @@
 .footer_menu_links__li:hover {
   color: #fab900;
   transition: 0.5s all;
-  background-color: red;
 }
 .footer_menu_links__li {
   padding-bottom: 5px;
@@ -116,7 +115,7 @@
 .is-16 {
   font-size: 16px;
 }
-.footer__comment link:hover {
+.footer__comment a:hover {
   color: #fab900;
   transition: 0.7s;
 }

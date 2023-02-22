@@ -107,7 +107,6 @@ function Navbar({ categories }) {
           </div>
         ))}
       </div>
-
     </React.StrictMode>
   );
 }

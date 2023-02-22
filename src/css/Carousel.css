@@ -6,7 +6,7 @@
 
 .carusel__div {
     width: 800px;
-    height: 350px;
+    height: 450px;
 }
 
 .carusel {
@@ -14,8 +14,24 @@
     height: 100px;
 }
 
-.Carusel {
+.c {
     background: linear-gradient(to bottom, #ffbf00 0%, #ffbf00 100%) !important;
     width: 100%;
-    height: 350px;
+    height: 450px;
+}
+
+.carousel-root{
+    width: 800px;
+    height: 450px;
+}
+.carousel img{
+    width: 400px;
+    height: 450px;
+}
+.carousel{
+    width: 400px;
+    height: 450px;
+}
+.thumbs-wrapper{
+    display: none;
 }
