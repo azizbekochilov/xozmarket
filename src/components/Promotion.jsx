@@ -1,7 +1,6 @@
 import React from "react";
 import '../css/Promotion.css'
 import { Link } from "react-router-dom"
-// import logo from './public/img/logo.png'
 
 function Promotion() {
     return (
