@@ -101,9 +101,9 @@ function Navbar({ categories }) {
           <div>
 
             
-            <h1>{item.attributes.title}</h1>
-            <h1>{item.attributes.price}</h1>
-          <img src={`http://localhost:1337${item.attributes.image.data[0].attributes.url}`} width="100px" alt="" />
+            {/* <h1>{item.attributes.title}</h1> */}
+            {/* <h1>{item.attributes.price}</h1> */}
+          {/* <img src={`http://localhost:1337${item.attributes.image.data[0].attributes.url}`} width="100px" alt="" /> */}
           </div>
         ))}
       </div>

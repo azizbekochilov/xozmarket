@@ -21,7 +21,7 @@
 .promotion__promotions_1 {
     width: 255px;
     height: 200px;
-    border: 1px solid  rgba(128, 128, 128, 0.311);
+    border: 1px solid rgba(128, 128, 128, 0.311);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,16 +48,17 @@
 .promotion__promotions_2 {
     width: 255px;
     height: 200px;
-    background-color:  rgba(128, 128, 128, 0.15);
-    border: 1px solid  rgba(128, 128, 128, 0.311);
+    background-color: rgba(128, 128, 128, 0.15);
+    border: 1px solid rgba(128, 128, 128, 0.311);
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-left: 10px;
+    position: relative;
 }
 
 .promotion__promotions_2_img {
-    width: 110px;
+    width: 250px;
     height: 75px;
     border-radius: 50%;
     margin-left: 20px;
@@ -65,14 +66,33 @@
 }
 
 .promotion__promotions_2_person {
-    margin-left: 25px;
+    margin-left: 27px;
 }
 
 .promotion__promotions_2_person_h4 {
     margin-top: -50px;
     font-size: 20px;
+    font-weight: 700;
 }
 
 .promotion__promotions_2_person_p {
     margin-top: 10px;
+    margin-right: 20px;
+}
+
+.promotion__promotions_2_button button {
+    position: absolute;
+    left: 27%;
+    top: 70%;
+    width: 120px;
+    height: 35px;
+    background-color: #FAB900;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.promotion__promotions_2_button button:hover {
+    background-color: #E6B10A;
 }

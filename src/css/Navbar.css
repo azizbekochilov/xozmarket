@@ -117,7 +117,7 @@
     font-size: 15px;
     margin-left: 1px;
     text-decoration: none;
-    display: flex;
+    display: inline-flex;
     align-items: center;
 }
 
@@ -179,7 +179,7 @@
 .nav__end_link {
     color: white;
     text-decoration: none;
-    display: flex;
+    display: inline-flex;
     align-items: center;
 }
 

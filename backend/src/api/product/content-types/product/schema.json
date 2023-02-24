@@ -20,7 +20,7 @@
     },
     "image": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",
@@ -37,6 +37,12 @@
     },
     "price": {
       "type": "biginteger"
+    },
+    "isNew": {
+      "type": "boolean"
+    },
+    "isSeller": {
+      "type": "boolean"
     }
   }
 }
