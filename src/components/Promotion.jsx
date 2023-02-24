@@ -15,7 +15,7 @@ function Promotion() {
                         <p className="promotion__promotions_1_p">Мото культиватор в наличии от 11 807р!</p>
                         <img className="promotion__promotions_1_img" src="https://xozm.ru/upload/iblock/6a4/6a4476e51a6565fbbd378bb90a3fe306.jpg" alt="" />
                     </Link>
-                    <Link className="promotion__promotions_1">
+                    <Link to='/' className="promotion__promotions_1">
                         <p className="promotion__promotions_1_p">Бензиновый триммер от 5 990р!</p>
                         <img className="promotion__promotions_1_img" src="https://xozm.ru/upload/iblock/25f/25f01333a5ef22fa038c6c8a9bea68df.jpg" alt="" />
                     </Link>
@@ -25,7 +25,8 @@ function Promotion() {
                             <p className="promotion__promotions_2_person_h4">Иванова <br /> Зоя</p>
                             <p className="promotion__promotions_2_person_p">персональный менеджер</p>
                         </div>
-                        <div>
+                    
+                        <div className="promotion__promotions_2_button">
                             <button>Начать чат</button>
                         </div>
                     </div>
