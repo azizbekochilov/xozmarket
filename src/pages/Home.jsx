@@ -1,9 +1,10 @@
-import React from 'react'
-import Footer from '../components/Footer'
-import Karusel from '../components/Karusel'
-import Menu from '../components/Menu'
-import Navbar from '../components/Navbar'
-import Promotion from '../components/Promotion'
+import React from "react";
+import Footer from "../components/Footer";
+import Karusel from "../components/Karusel";
+import Menu from "../components/Menu";
+import Navbar from "../components/Navbar";
+import Promotion from "../components/Promotion";
+import HomeAd from "../components/HomeAd";
 
 const Home = () => {
   return (
@@ -11,10 +12,10 @@ const Home = () => {
       <Navbar />
       <Menu />
       <Karusel />
-      <Promotion/>
+      <Promotion />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
