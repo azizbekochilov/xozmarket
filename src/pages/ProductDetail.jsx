@@ -55,13 +55,18 @@ const ProductDetail = () => {
             </div>
 
             <div className="product-column is-50">
-              <div className="product-price">
-                <h1>190-Rub</h1>
+              <div className="product-left">
+                <div className="product-box">
+                  <div className="product-price">
+                  <h1 className="detail__h1_underlined">$2.401</h1>
+                    <h1 className="detail__h1">$1.999</h1>
+                  </div>
+                  <div className="product-order">
+                    <button className="product__button">Заказать</button>
+                  </div>
+                </div>
               </div>
-              <div className="product-order">
-                <button className="product__button">Заказать</button>
-              </div>
-            </div>
+            </div>  
           </div>
         </div>
       </div>

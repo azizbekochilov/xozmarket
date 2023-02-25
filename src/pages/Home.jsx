@@ -13,6 +13,7 @@ const Home = () => {
       <Menu />
       <Karusel />
       <Promotion />
+      <HomeAd/>
       <Footer />
     </div>
   );

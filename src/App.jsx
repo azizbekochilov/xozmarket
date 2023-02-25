@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Karusel from "./components/Karusel";
 import Footer from "./components/Footer";
 import ProductDetail from "./pages/ProductDetail";
+import HomeAd from "./components/HomeAd";
 function App() {
   return (
     <Routes>
