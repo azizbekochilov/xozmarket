@@ -28,7 +28,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="footer__comment">
-              <Link to="*">
+              <Link to="/footerIdea">
                 <RiFileEditLine className="is-16" />
                 Поделитесь <br /> мнением
               </Link>
