@@ -23,7 +23,8 @@
 
 .footerIdea__box_link {
     position: absolute;
-    width: 1260px;
+    width: 670px;
+    /* padding-left: 200px; */
     display: flex;
     justify-content: end;
     margin-top: -60px;
@@ -31,11 +32,6 @@
 
 .none {
     display: none;
-}
-
-.link {
-    width: 500px;
-    margin-right: 100px;
 }
 
 .footerIdea__box_h2 {
