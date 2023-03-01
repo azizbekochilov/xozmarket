@@ -72,7 +72,7 @@ function Navbar({ categories }) {
           </div>
 
           <div className="nav__img">
-            <Link>
+            <Link to="/">
               <img className="nav__img_img" src="https://xozm.ru/local/templates/main/img/svg/logo.svg" />
             </Link>
           </div>

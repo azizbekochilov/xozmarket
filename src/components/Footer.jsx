@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="footer">
         <div className="columns">
           <div className="column is-33 footer-left">
-            <Link to="*" className="footer__logo">
+            <Link to="/" className="footer__logo">
               <img
                 className="footer__logo"
                 src="https://xozm.ru/local/templates/main/img/svg/logo.svg"
