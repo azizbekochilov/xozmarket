@@ -9,6 +9,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
 import { PRODUCTS } from "../utils/urls";
+import News from "../components/News";
 
 const Home = () => {
   const [products, setProducts] = useState([])
@@ -25,6 +26,7 @@ const Home = () => {
       <Karusel />
       <Promotion />
       <HomeAd products={products.filter(product => product.attributes.isSeller)}/>
+      <News products={products.filter(product => product.attributes.isNew)}/>
       <Footer />
     </div>
   );
