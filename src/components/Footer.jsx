@@ -79,7 +79,7 @@ const Footer = () => {
                   <a>Доставка и Оплата</a>
                 </li>
                 <li class="footer_menu_links__li">
-                  <a>Кредит</a>
+                  <Link to="/">Кредит</Link>
                 </li>
                 <li class="footer_menu_links__li">
                   <a>Карта сайта</a>

@@ -27,9 +27,8 @@ const ProductDetail = () => {
                     (арт.381)
                   </h1>
                 </div>
-                <div className="product-rating"></div>
               </div>
-              <div className="product-column is-30">
+              <div className="product-column is-30 amir" >
                 <div className="product-favorites">
                   <AiOutlineStar />
                   <p>Избранное</p>
@@ -86,6 +85,8 @@ const ProductDetail = () => {
               <p>Аксессуары</p>
             </div>
           </div>
+          
+          
         </div>
       </div>
 
