@@ -8,22 +8,22 @@
   padding-bottom: 100px;
 }
 
-.section {
+.ftr-section {
   padding: 0px 40px;
   background-color: #363a3b;
   color: #fff;
   padding-bottom: 100px;
 }
-.is-33 {
+.ftr-is-33 {
   width: 33%;
 }
-.columns {
+.ftr-columns {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   box-sizing: border-box;
 }
-.column {
+.ftr-column {
   box-sizing: border-box;
   padding: 0px;
 }
@@ -70,7 +70,7 @@
   color: #9b9b9b;
   border: 1px solid #9b9b9b;
 }
-.is-50 {
+.ftr-is-50 {
   width: 50%;
 }
 .footer_menu_links {
@@ -112,7 +112,7 @@
   text-align: left;
   padding-left: 170px;
 }
-.is-16 {
+.ftr-is-16 {
   font-size: 16px;
 }
 .footer__comment a:hover {

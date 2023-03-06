@@ -11,10 +11,10 @@ import { RiFileEditLine } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <section className="section ">
+    <section className="ftr-section ">
       <div className="footer">
-        <div className="columns">
-          <div className="column is-33 footer-left">
+        <div className="ftr-columns">
+          <div className="ftr-column ftr-is-33 footer-left">
             <Link to="/" className="footer__logo">
               <img
                 className="footer__logo"
@@ -34,7 +34,7 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="column is-33 footer-middle">
+          <div className="ftr-column ftr-is-33 footer-middle">
             <div className="footer-search">
               <input
                 type="text"
@@ -45,8 +45,8 @@ const Footer = () => {
                 <BsSearch />
               </div>
             </div>
-            <div class="footer_menu_links columns">
-              <ul class="footer_menu_links__ul column is-50">
+            <div class="footer_menu_links ftr-columns">
+              <ul class="footer_menu_links__ul ftr-column ftr-is-50">
                 <li class="footer_menu_links__li">
                   <a>О компании</a>
                 </li>
@@ -67,7 +67,7 @@ const Footer = () => {
                   <a>Партнеры</a>
                 </li>
               </ul>
-              <ul class="footer_menu_links__ul column is-50">
+              <ul class="footer_menu_links__ul ftr-column ftr-is-50">
                 {" "}
                 <li class="footer_menu_links__li">
                   <a>Договор оферты</a>
@@ -87,7 +87,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="column is-33 footer-right">
+          <div className="ftr-column ftr-is-33 footer-right">
             <div class="footer__contact">
               <a href="tel:+998914422317" class="footer__tel">
                 +998(91)442-23-17
