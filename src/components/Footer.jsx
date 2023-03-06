@@ -48,41 +48,61 @@ const Footer = () => {
             <div class="footer_menu_links ftr-columns">
               <ul class="footer_menu_links__ul ftr-column ftr-is-50">
                 <li class="footer_menu_links__li">
-                  <a>О компании</a>
+                  <Link to="/about">
+                    <a>О компании</a>
+                  </Link>{" "}
                 </li>
 
                 <li class="footer_menu_links__li">
-                  <a>Акции и распродажи</a>
+                  <Link to="/about">
+                    <a>Акции и распродажи</a>
+                  </Link>
                 </li>
 
                 <li class="footer_menu_links__li">
-                  <a>Новости</a>
+                  <Link to="/about">
+                    <a>Новости</a>
+                  </Link>
                 </li>
 
                 <li class="footer_menu_links__li">
-                  <a>Контакты</a>
+                  <Link to="/about">
+                    <a>Контакты</a>
+                  </Link>
                 </li>
 
                 <li class="footer_menu_links__li">
-                  <a>Партнеры</a>
+                  <Link to="/about">
+                    <a>Партнеры</a>
+                  </Link>
                 </li>
               </ul>
               <ul class="footer_menu_links__ul ftr-column ftr-is-50">
                 {" "}
                 <li class="footer_menu_links__li">
-                  <a>Договор оферты</a>
+                  <Link to="/oforma">
+                    <a>Договор оферты</a>
+                  </Link>
                 </li>
                 <li class="footer_menu_links__li">
-                  <a>Политика персональных данных</a>
+                  <Link to="/dannix">
+                    <a>Политика персональных данных</a>{" "}
+                  </Link>
                 </li>
                 <li class="footer_menu_links__li">
-                  <a>Доставка и Оплата</a>
+                  <Link to="/oplata">
+                    <a>Доставка и Оплата</a>{" "}
+                  </Link>
                 </li>
                 <li class="footer_menu_links__li">
-                  <Link to="/">Кредит</Link>
+                  <Link to="/kredit">
+                    <a>Кредит</a>{" "}
+                  </Link>
                 </li>
                 <li class="footer_menu_links__li">
-                  <a>Карта сайта</a>
+                  <Link to="/">
+                    <a>Карта сайта</a>{" "}
+                  </Link>
                 </li>
               </ul>
             </div>

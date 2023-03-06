@@ -196,3 +196,20 @@
     list-style-type: none;
     margin-left: 1px;
 }
+.nav__end_master{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 200;
+    position: absolute;
+    padding-bottom: 31px;
+    padding-left: 20px;
+}
+.nav__end_icon{
+    color: #fff;
+    width: 100%;
+}
+.nav__end_master h1{
+    font-size: 17px;
+    font-weight: 500;
+
+}
