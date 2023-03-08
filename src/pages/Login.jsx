@@ -20,7 +20,7 @@ const Login = () => {
         <br />
         <span className="navigate">
         У вас нет аккаунта? Кликните{" "}
-          <a href="#" className="link underline">
+          <a href="/SignUp" className="link underline">
             сюда.
           </a>
         </span>

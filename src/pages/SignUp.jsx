@@ -10,14 +10,13 @@ const SignUp = () => {
        <input type="text" className="input" placeholder="Ваше имя*" /><br />
         <input type="text" className="input" placeholder="Ваша фамилия*" /><br />
         <input type="text" className="input" placeholder="Телефон*"/><br />
-        <input type="text" className="input" placeholder="Ваше имя*"/><br />
-        <input type="text" className="input" placeholder="Пароль"/><br />
-        <input type="text" className="input" placeholder="Подверждение пароля"/>
+        <input type="password" className="input" placeholder="Пароль"/><br />
+        <input type="password" className="input" placeholder="Подверждение пароля"/>
         
        </form><br />
        <span className="navigate">
           У вас уже есть аккаунт? Кликните{" "}
-          <a href="#" className="link underline">
+          <a href="/Login" className="link underline">
             сюда.
           </a>
         </span>
