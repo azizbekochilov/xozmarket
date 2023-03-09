@@ -21,7 +21,8 @@
 .ad-product-info {
   font-size: 24px;
   color: #4b4b4b;
-  text-align: left;
+  text-align: center;
+
 }
 .ad-product-info:hover {
   color: #fab900;
@@ -33,6 +34,8 @@
 }
 .top img{
     text-align: center;
+    width: 200px;
+    height: 200px;
 }
 .ad-product hr{
     margin: 30px 10px;
@@ -43,15 +46,15 @@
 }
 .bottom{
     height: 50px;
+    text-align: center;
+    line-height: 2;
 }
 .price{
-    margin: 0px 25px;
     color: #6f6f6f;
     font-weight: 300;
 }
 .discount{
     font-size: 25px;
-    margin: 0px 10px;
     color: #cd030c;
     font-weight: bolder;
 }

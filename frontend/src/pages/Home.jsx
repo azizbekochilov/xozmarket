@@ -17,8 +17,6 @@ const Home = () => {
   useEffect(() => {
     axios.get(PRODUCTS).then(res => setProducts(res.data.data))
   }, [])
-
-  console.log(products);
   return (
     <div>
       <Navbar />

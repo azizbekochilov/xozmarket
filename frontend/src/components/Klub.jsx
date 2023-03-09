@@ -6,13 +6,7 @@ import Menu from "./Menu";
 const Klub = () => {
   return (
     <div>
-      <Navbar />
-      <Menu />
-      <div className="">
-        
-      </div>
-
-      <Footer />
+      рудддщопирмсуйнрвитолыьфчтрмиагтсо
     </div>
   );
 };

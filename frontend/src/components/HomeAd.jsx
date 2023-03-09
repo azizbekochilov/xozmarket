@@ -1,8 +1,8 @@
 import React from "react";
+import {Link} from "react-router-dom"
 import "../css/HomeAd.css";
 
 const HomeAd = ({products}) => {
-  console.log(products);
   return (
     <div className="bestseller-part">
       <h2>Популярные товары</h2>
@@ -17,9 +17,9 @@ const HomeAd = ({products}) => {
               src={`http://localhost:1337${product.attributes.image.data.attributes.url}`}
               alt=""
             />
-            <a href="#" className="ad-product-info">
+            <Link to={'product/' + product.id} className="ad-product-info">
               {product.attributes.title}
-            </a>
+            </Link>
           </div>
           <hr />
           <div className="bottom">

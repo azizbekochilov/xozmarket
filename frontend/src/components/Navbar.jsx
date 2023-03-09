@@ -2,28 +2,9 @@ import React from "react";
 import "../css/Navbar.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserGroup, faStar, faMagnifyingGlass, faBasketShopping, } from "@fortawesome/free-solid-svg-icons";
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { faUserGroup, faStar, faMagnifyingGlass, faBasketShopping} from "@fortawesome/free-solid-svg-icons";
 
-function Navbar({ categories }) {
-
-  const [product, setProduct] = useState([])
-
-  useEffect(() => {
-    // axios.get(http://localhost:1337/api/categories)
-    //   .then((res) => console.log(res.data.data))
-
-    axios.get(`http://localhost:1337/api/products?populate=image`)
-      .then((res) => setProduct(res.data.data))
-  }, [])
-
-  useEffect(() => {
-    if (product && product[0]) {
-      console.log(product[0]);
-    }
-  }, [product])
-
+function Navbar() {
   return (
     <React.StrictMode>
       <div className="navbar">
@@ -72,9 +53,9 @@ function Navbar({ categories }) {
           </div>
 
           <div className="nav__img">
-            <a href='/#'>
+            <Link to='/'>
               <img className="nav__img_img" src="https://xozm.ru/local/templates/main/img/svg/logo.svg" />
-            </a>
+            </Link>
           </div>
 
           <div className="nav__input">
@@ -90,22 +71,13 @@ function Navbar({ categories }) {
                 <FontAwesomeIcon icon={faBasketShopping} className='nav__end_link_icon' />
                 <p>Ваша <br /> корзина</p>
               </div>
-              
+
             </Link>
           </div>
         </div>
       </div>
 
       <div>
-        {product && product.map(item => (
-          <div>
-
-            
-            {/* <h1>{item.attributes.title}</h1> */}
-            {/* <h1>{item.attributes.price}</h1> */}
-          {/* <img src={`http://localhost:1337${item.attributes.image.data[0].attributes.url}`} width="100px" alt="" /> */}
-          </div>
-        ))}
       </div>
     </React.StrictMode>
   );

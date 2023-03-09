@@ -2,7 +2,6 @@ import React from "react";
 import "../css/HomeAd.css";
 
 const News = ({products}) => {
-  console.log(products);
   return (
     <div className="bestseller-part">
       <h2>Новинки</h2>
