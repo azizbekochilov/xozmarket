@@ -1,0 +1,25 @@
+.menu {
+  height: 120px;
+  border: 1px solid gray;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.menu-item {
+  display: inline-block;
+  /* border: 1px solid black; */
+  text-align: center;
+  min-width: 6%;
+  height: 100%;
+  padding: 15px 10px;
+  color: #818181;
+}
+.menu-item span {
+  display: block;
+}
+
+.menu-item:hover {
+  color: #fab900;
+}
