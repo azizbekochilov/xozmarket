@@ -5,7 +5,6 @@ const Login = () => {
   // let {email ,setEmail}= useState()
   // let {password ,setPassword}=useState()
 
-
   return (
     <div className="container">
       <div className="section">
@@ -13,17 +12,13 @@ const Login = () => {
         <br />
         <br />
         <form action="">
-          <input
-            type="email"
-            className="input"
-            placeholder="E-mail"
-          />
+          <input type="email" className="input" placeholder="E-mail" />
           <br />
           <input type="password" className="input" placeholder="Пароль" />
         </form>
         <br />
         <span className="navigate">
-        У вас нет аккаунта? Кликните{" "}
+          У вас нет аккаунта? Кликните{" "}
           <a href="/SignUp" className="link underline">
             сюда.
           </a>
@@ -35,7 +30,9 @@ const Login = () => {
           <a href="#" className="link">
             Забыли пароль?
           </a>
-          <a href="#"><button className="button">Вход</button></a>
+          <a href="#">
+            <button className="button">Вход</button>
+          </a>
         </div>
       </div>
     </div>

@@ -10,8 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { GrUserWorker } from "react-icons/gr";
-
+import { BsPersonSquare } from "react-icons/bs";
 function Navbar({ categories }) {
   const [product, setProduct] = useState([]);
 
@@ -112,10 +111,11 @@ function Navbar({ categories }) {
                 </p>
               </div>
             </Link>
+
             <Link to="/master" className="nav__end_link">
               <div className="nav__end_master">
-                <GrUserWorker className="nav__end_icon"/>
-                <h1 className="nav__end_master-h1">Мастер</h1>
+                <BsPersonSquare className="nav__end_icon" size={20} />
+                <h1 className="nav__end_master-h1">Мастеры</h1>
               </div>
             </Link>
           </div>
