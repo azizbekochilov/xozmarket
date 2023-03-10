@@ -100,7 +100,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li class="footer_menu_links__li">
-                  <Link to="/">
+                  <Link to="/karta">
                     <a>Карта сайта</a>{" "}
                   </Link>
                 </li>

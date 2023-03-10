@@ -1,18 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/Login.css";
 
 const Login = () => {
+  // let {email ,setEmail}= useState()
+  // let {password ,setPassword}=useState()
+
+
   return (
     <div className="container">
       <div className="section">
-        <h2 className="heading">Вход</h2>
+        <h2 className="headi1ng">Вход</h2>
         <br />
         <br />
         <form action="">
           <input
-            type="text"
+            type="email"
             className="input"
-            placeholder="E-mail или № карты или телефон"
+            placeholder="E-mail"
           />
           <br />
           <input type="password" className="input" placeholder="Пароль" />

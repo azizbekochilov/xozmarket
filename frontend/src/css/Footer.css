@@ -36,7 +36,7 @@
   font-size: 14px;
   color: #abacab;
   margin-left: 180px;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
 .footer__logo {
   margin-bottom: 0px;
@@ -78,15 +78,24 @@
   font-size: 15px;
   text-align: left;
   margin-bottom: 10px;
+}
+.footer_menu_links__li a{
+  color: #fff;
   cursor: pointer;
 }
+.footer_menu_links__li a:hover{
+  color: #fab900;
+  transition: 0.4s;
+}
+
 .footer_menu_links__li:hover {
   color: #fab900;
   transition: 0.5s all;
 }
 .footer_menu_links__li {
   padding-bottom: 5px;
-}
+  text-decoration: none;
+} 
 .footer__tel {
   color: #fab900;
   font-size: 27px;
@@ -155,4 +164,4 @@
   border-top: 1px solid #3C3F40;
   text-align: center;
   font-size: 12px;
-}
+} 

@@ -112,7 +112,7 @@ function Navbar({ categories }) {
                 </p>
               </div>
             </Link>
-            <Link to="" className="nav__end_link">
+            <Link to="/master" className="nav__end_link">
               <div className="nav__end_master">
                 <GrUserWorker className="nav__end_icon"/>
                 <h1 className="nav__end_master-h1">Мастер</h1>
