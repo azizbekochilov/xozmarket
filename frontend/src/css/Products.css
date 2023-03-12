@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section__pr {
+    width: 60%;
+    margin: 100px auto;
+}
+.card {
+    width: 250px !important;
+    height: 300px;
+    text-align: center;
+    position: relative;
+    margin: 20px 0px;
+}
+.card img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 50px;
+}
+.flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.products_h1 {
+    color:  #f6b607;
+    margin-bottom: 50px;
+}
+
+.title {
+    color: black;
+}

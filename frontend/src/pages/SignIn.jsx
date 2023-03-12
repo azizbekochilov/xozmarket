@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "../css/Login.css";
 
-const Login = () => {
-  // let {email ,setEmail}= useState()
-  // let {password ,setPassword}=useState()
+const SignIn = () => {
 
   return (
     <div className="container">
@@ -39,4 +37,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignIn;
