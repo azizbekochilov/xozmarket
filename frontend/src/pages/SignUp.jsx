@@ -61,7 +61,7 @@ const SignUp = () => {
   }, [username]);
   return (
     <div className="container">
-      <div className="su_section">
+      <div className="su-section">
         <h2 className="heading">Регистрация</h2>
         <br />
         <form action="">
@@ -82,14 +82,17 @@ const SignUp = () => {
         <br />
         <span className="navigate">
           У вас уже есть аккаунт? Кликните{" "}
-          <a href="/Login" className="link underline">
+          <a href="/sign-in" className="link underline">
             сюда.
           </a>
         </span>
-        <div className="link-box">
-          <a href="#">
-            <button className="button btn-margin">Вход</button>
-          </a>
+        <br />
+        <br />
+
+        <div className="si-btn">
+          <Link to="/">
+            <button className="si-btnn"> Регистрация</button>
+          </Link>
         </div>
       </div>
     </div>

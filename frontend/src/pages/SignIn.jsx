@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "../css/Login.css";
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
-
   return (
     <div className="container">
       <div className="section">
-        <h2 className="headi1ng">Вход</h2>
+        <h2 className="heading">Вход</h2>
         <br />
         <br />
         <form action="">
@@ -17,20 +17,22 @@ const SignIn = () => {
         <br />
         <span className="navigate">
           У вас нет аккаунта? Кликните{" "}
-          <a href="/SignUp" className="link underline">
+          <a href="/sign-up" className="link underline">
             сюда.
           </a>
         </span>
         <br />
         <br />
+
+        <a href="#" className="si-a">
+          Забыли пароль?
+        </a>
         <br />
-        <div className="link-box">
-          <a href="#" className="link">
-            Забыли пароль?
-          </a>
-          <a href="#">
-            <button className="button">Вход</button>
-          </a>
+        <br />
+        <div className="si-btn">
+          <Link to="/">
+            <button className="si-btnn"> Вход</button>
+          </Link>
         </div>
       </div>
     </div>

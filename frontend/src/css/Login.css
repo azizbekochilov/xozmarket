@@ -9,8 +9,8 @@
   box-shadow: 0px 1px 4px 1px #777;
   padding: 30px;
 }
-.su_section {
-  width: 30%; 
+.su-section {
+  width: 30%;
   margin: auto;
   min-height: 44vh;
   text-align: center;
@@ -24,6 +24,7 @@
   color: #fab900;
   padding-top: 20px;
 }
+
 .input {
   height: 40px;
   width: 80%;
@@ -60,15 +61,31 @@
   align-items: center;
 }
 .button {
-  padding: 7px 20px;
   background-color: #fab900;
   border: none;
+  cursor: pointer;
 }
 .button:hover {
   border: 2px solid #fab900;
   background-color: #fff;
-  cursor: pointer;
 }
 .btn-margin {
   margin: 20px;
+}
+.si-btnn {
+  padding: 15px 40px;
+  background-color: #fab900;
+  border: none;
+  cursor: pointer;
+}
+.si-btnn:hover {
+  border: 2px solid #fab900;
+  background-color: #fff;
+}
+/* .si-btn {
+  margin-top: 30px;
+} */
+.si-a {
+  font-size: 14px;
+
 }
