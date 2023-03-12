@@ -1,15 +1,15 @@
-import React, { useState ,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "../css/Login.css";
-import { navigate } from "react-router-dom";
+import { Link ,useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const SignUp = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password2, setPassword2] = useState("");
   const [empty, setEmpty] = useState(true);
+  const navigate = useNavigate();
 
   const auth = (e) => {
     e.preventDefault();

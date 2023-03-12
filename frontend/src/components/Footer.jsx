@@ -24,15 +24,15 @@ const Footer = () => {
             </Link>
             <div className="footer__logo_text">
               <p>
-                Интернет-магазин товаров для <br /> дома.
+                Интернет-магазин <br /> товаров для <br /> дома.
               </p>
             </div>
             <div className="footer__comment">
               <Link to="/footerIdea">
-                <RiFileEditLine className="is-16" />
+                <RiFileEditLine className="" />
                 Поделитесь <br /> мнением
               </Link>
-            </div>
+            </div>  
           </div>
           <div className="ftr-column ftr-is-33 footer-middle">
             <div className="footer-search">

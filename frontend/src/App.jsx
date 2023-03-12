@@ -8,8 +8,11 @@ import Master from "./pages/Master";
 import MasterDetail from "./pages/MasterDetail";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
-
-
+import Oforma from "./pages/Oforma";
+import Oplata from "./pages/Oplata";
+import Dannix from "./pages/Dannix";
+import About from "./pages/About";
+import Kredit from "./pages/Kredit";
 function App() {
   return (
     <Routes>
@@ -22,6 +25,11 @@ function App() {
       <Route path="/masterdetail/:id" element={<MasterDetail />} />
       <Route path="/sign-up" element={<SignUp />} />
       <Route path="/sign-in" element={<SignIn />} />
+      <Route path="/oforma" element={<Oforma />} />
+      <Route path="/oplata" element={<Oplata/>} />
+      <Route path="/dannix" element={<Dannix/>} />
+      <Route path="/kredit" element={<Kredit/>} />
+      <Route path="/about" element={<About/>} />
     </Routes>
   );
 }
