@@ -67,21 +67,22 @@ function Navbar() {
           </div>
 
           <div className="nav__end">
-            <Link to='/'>
+            <Link to='/' >
               <div className="nav__end_link">
                 <FontAwesomeIcon icon={faBasketShopping} className='nav__end_link_icon' />
                 <p>Ваша <br /> корзина</p>
               </div>
             </Link>
-   </div>
-            <div className="nav__end__master">
-              <Link to="/master" className="nav__end_link1">
-                <BsPersonSquare className="nav__end_icon" size={20} />
-                <h1 className="nav__end_master-h1">Мастеры</h1>
-              </Link>
-            </div>
+        
 
-       
+          <div className="nav__end__master">
+            <Link to="/master" className="nav__end_link1">
+              <BsPersonSquare className="nav__end_icon" size={20} />
+              <h1 className="nav__end_master-h1">Мастеры</h1>
+            </Link>
+          </div>
+  </div>
+          
         </div>
       </div>
 

@@ -202,14 +202,13 @@
 
 .nav__end__master {
   color: #fff;
-  width: 61%;
-  height: 105px;
   display: flex;
   justify-content: end;
-  align-items: center;
+  margin-top: -43px;
   font-size: 16px;
   font-weight: 200;
   position: absolute;
+  margin-left: 150px;
 }
 
 .nav__end_link1 {
