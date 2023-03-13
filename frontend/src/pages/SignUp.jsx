@@ -11,20 +11,6 @@ const SignUp = () => {
   const [empty, setEmpty] = useState(true);
   const navigate = useNavigate();
 
-  const auth = (e) => {
-    e.preventDefault();
-    axios
-      .post("http://localhost:1337/api/auth/local", {
-        identifier: username,
-        password,
-      })
-      .then((res) => {
-        localStorage.setItem("user", JSON.stringify(res.data.user));
-        localStorage.setItem("jwt", JSON.stringify(res.data.jwt));
-        navigate("/");
-      })
-      .catch((err) => alert("Неверный логин или пароль"));
-  };
 
   const signUp = (event) => {
     event.preventDefault();
@@ -37,7 +23,7 @@ const SignUp = () => {
             password: password,
           })
           .then((res) => {
-            navigate("/signin");
+            navigate("/sign-in");
           })
           .catch((err) => console.log(err));
       } else {
@@ -64,20 +50,21 @@ const SignUp = () => {
       <div className="su-section">
         <h2 className="heading">Регистрация</h2>
         <br />
-        <form action="">
-          <input type="text" className="input" placeholder="Ваше имя" />
+        <form onSubmit={e => signUp(e)}>
+          <input type="text" className="input" placeholder="Логин" value={username} onChange={e => setUsername(e.target.value)}/>
           <br />
-          <input type="text" className="input" placeholder="Ваша фамилия" />
+          <input type="email" className="input" placeholder="Ваш E-mail" value={email} onChange={e => setEmail(e.target.value)}/>
           <br />
-          <input type="email" className="input" placeholder="Ваш E-mail" />
-          <br />
-          <input type="password" className="input" placeholder="Пароль" />
+          <input type="password" className="input" placeholder="Пароль" value={password} onChange={e => setPassword(e.target.value)}/>
           <br />
           <input
             type="password"
             className="input"
             placeholder="Подверждение пароля"
+            value={password2} onChange={e => setPassword2(e.target.value)}
           />
+
+          <button className="si-btnn"> Регистрация</button>
         </form>
         <br />
         <span className="navigate">
@@ -86,14 +73,6 @@ const SignUp = () => {
             сюда.
           </a>
         </span>
-        <br />
-        <br />
-
-        <div className="si-btn">
-          <Link to="/">
-            <button className="si-btnn"> Регистрация</button>
-          </Link>
-        </div>
       </div>
     </div>
   );
