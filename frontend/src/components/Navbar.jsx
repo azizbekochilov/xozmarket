@@ -2,8 +2,8 @@ import React from "react";
 import "../css/Navbar.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserGroup, faStar, faMagnifyingGlass, faBasketShopping} from "@fortawesome/free-solid-svg-icons";
-import {BsPersonSquare} from "react-icons/bs"
+import { faUserGroup, faStar, faMagnifyingGlass, faBasketShopping } from "@fortawesome/free-solid-svg-icons";
+import { BsPersonSquare } from "react-icons/bs"
 
 function Navbar() {
   return (
@@ -72,15 +72,16 @@ function Navbar() {
                 <FontAwesomeIcon icon={faBasketShopping} className='nav__end_link_icon' />
                 <p>Ваша <br /> корзина</p>
               </div>
-
             </Link>
-            <Link to="/master" className="nav__end_link">
-              <div className="nav__end_master">
+   </div>
+            <div className="nav__end__master">
+              <Link to="/master" className="nav__end_link1">
                 <BsPersonSquare className="nav__end_icon" size={20} />
                 <h1 className="nav__end_master-h1">Мастеры</h1>
-              </div>
-            </Link>
-          </div>
+              </Link>
+            </div>
+
+       
         </div>
       </div>
 

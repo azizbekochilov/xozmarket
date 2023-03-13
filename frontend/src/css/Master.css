@@ -38,3 +38,13 @@
     text-align: start;
     margin-bottom: 20px;
 }
+
+.pp {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.master__box_link_p2 {
+    color:  #f6b607;
+}
