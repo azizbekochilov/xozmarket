@@ -24,7 +24,7 @@ function Navbar() {
         </div>
 
         <div className="navbar__center">
-          <Link className="navbar__center_link" to="/">
+          <Link className="navbar__center_link" to="/favorites">
             <FontAwesomeIcon icon={faStar} /> Избранное
           </Link>
 
@@ -67,7 +67,7 @@ function Navbar() {
           </div>
 
           <div className="nav__end">
-            <Link to='/' >
+            <Link to='/buscet' >
               <div className="nav__end_link">
                 <FontAwesomeIcon icon={faBasketShopping} className='nav__end_link_icon' />
                 <p>Ваша <br /> корзина</p>

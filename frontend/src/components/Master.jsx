@@ -25,7 +25,7 @@ function Master() {
     const showModal = master => {
         setMaster(master)
         setShow(true)
-    }
+    }   
 
     return (
         <React.StrictMode>

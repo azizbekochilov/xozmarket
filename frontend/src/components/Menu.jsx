@@ -104,7 +104,7 @@ const Menu = () => {
           </span>
         </div>
       </Link>
-      <Link  to='/master'>
+      <Link  to='/'>
         <div className="menu-item">
           <AiOutlineGift size={30} />
           <span>Акции</span>

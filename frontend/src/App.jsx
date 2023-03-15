@@ -13,6 +13,9 @@ import Oplata from "./pages/Oplata";
 import Dannix from "./pages/Dannix";
 import About from "./pages/About";
 import Kredit from "./pages/Kredit";
+import Favorites from "./components/Favorites";
+import Bucket from "./components/Bucket";
+
 function App() {
   return (
     <Routes>
@@ -30,6 +33,8 @@ function App() {
       <Route path="/dannix" element={<Dannix/>} />
       <Route path="/kredit" element={<Kredit/>} />
       <Route path="/about" element={<About/>} />
+      <Route path="/favorites" element={<Favorites/>} />
+      <Route path="/buscet" element={<Bucket/>} />
     </Routes>
   );
 }

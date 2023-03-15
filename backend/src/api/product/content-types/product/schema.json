@@ -43,6 +43,12 @@
     },
     "isSeller": {
       "type": "boolean"
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review",
+      "mappedBy": "product"
     }
   }
 }

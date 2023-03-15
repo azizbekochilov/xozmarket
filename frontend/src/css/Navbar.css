@@ -123,7 +123,6 @@
 }
 
 .nav__start_link_icon {
-  /* position: absolute; */
   padding-right: 0px;
   font-size: 25px;
 }
@@ -154,7 +153,6 @@
   font-size: 16px;
   color: #a0a0a0;
   font-family: 'Roboto Condensed', sans-serif;
-  /* font-family: 'PT Sans Narrow', sans-serif; */
 }
 
 .nav__input_link {
@@ -197,8 +195,6 @@
   list-style-type: none;
   margin-left: 1px;
 }
-
-
 
 .nav__end__master {
   color: #fff;
