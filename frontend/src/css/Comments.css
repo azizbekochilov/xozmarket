@@ -1,0 +1,21 @@
+.comment_litso {
+  text-align: center;
+  color: #fab900;
+  font-size: 14px;
+}
+.comment_inputs {
+  text-align: center;
+}
+.comment_inputs p {
+  display: inline;
+  text-align: right;
+  font-size: 14px;
+  color: #6c6d6f;
+}
+.comment_inputs input {
+  display: inline-block;
+  color: #6c6d6f;
+  padding: 8px 50px 9px 12px;
+  border: 1px solid #cac8c7;
+  border-radius: 4px;
+}

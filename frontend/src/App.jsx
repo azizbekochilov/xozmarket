@@ -13,9 +13,12 @@ import Oplata from "./pages/Oplata";
 import Dannix from "./pages/Dannix";
 import About from "./pages/About";
 import Kredit from "./pages/Kredit";
+import OrderPage from "./pages/OrderPage";
+import Comments from "./components/Comments";
 function App() {
   return (
     <Routes>
+      <Route path="/comments" element={<Comments/>}/>
       <Route path="/" element={<Home />} />
       <Route path="/detail" element={<ProductDetail />} />
       <Route path="/footerIdea" element={<FooterIdea />} />
@@ -30,6 +33,7 @@ function App() {
       <Route path="/dannix" element={<Dannix/>} />
       <Route path="/kredit" element={<Kredit/>} />
       <Route path="/about" element={<About/>} />
+      <Route path="/orderpage" element={<OrderPage/>} />
     </Routes>
   );
 }
