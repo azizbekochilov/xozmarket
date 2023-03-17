@@ -15,11 +15,13 @@ import About from "./pages/About";
 import Kredit from "./pages/Kredit";
 import OrderPage from "./pages/OrderPage";
 import Comments from "./components/Comments";
+import Klub from "./pages/Klub";
 function App() {
   return (
     <Routes>
       <Route path="/comments" element={<Comments/>}/>
       <Route path="/" element={<Home />} />
+      <Route path="/klub" element={<Klub />} />
       <Route path="/detail" element={<ProductDetail />} />
       <Route path="/footerIdea" element={<FooterIdea />} />
       <Route path="/products/:id" element={<Products />} />

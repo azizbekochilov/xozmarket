@@ -1,4 +1,4 @@
-    .ordp_litso {
+/* .ordp_litso {
     text-align: center;
     color: #fab900;
     font-size: 14px;
@@ -18,4 +18,123 @@
     padding: 8px 50px 9px 12px;
     border: 1px solid #cac8c7;
     border-radius: 4px;
-    }
+    } */
+.ordp_litso {
+  text-align: center;
+  color: #fab900;
+  font-size: 14px;
+}
+
+.kod1 {
+  color: gray;
+  text-align: left;
+  padding-left: 320px;
+  font-size: 15px;
+  display: inline-flex;
+}
+.inp_a {
+  color: lightgrey;
+  width: -2;
+  display: inline-flex;
+  text-align: left;
+  margin-left: 50px;
+  padding-right: 250px;
+  font-size: 26px;
+  border: 1px solid rgb(170, 170, 170);
+  border-radius: 4px;
+}
+.kod2 {
+  color: gray;
+  text-align: left;
+  padding-left: 320px;
+  font-size: 15px;
+  display: inline-flex;
+}
+.inp_b {
+  color: lightgrey;
+  display: inline-flex;
+  text-align: left;
+  margin-left: 50px;
+  padding-right: 250px;
+  font-size: 26px;
+  border: 1px solid rgb(170, 170, 170);
+  border-radius: 4px;
+}
+.kod3 {
+  color: gray;
+  text-align: left;
+  padding-left: 320px;
+  font-size: 15px;
+  display: inline-flex;
+}
+.inp_c {
+  color: lightgrey;
+  display: inline-flex;
+  text-align: left;
+  margin-left: 30px;
+  border: 1px solid rgb(170, 170, 170);
+  border-radius: 4px;
+  padding-right: 250px;
+  font-size: 26px;
+}
+.kod4 {
+  color: gray;
+  text-align: left;
+  padding-left: 320px;
+  font-size: 15px;
+  display: inline-flex;
+}
+.inp_d {
+  color: lightgrey;
+  display: inline-flex;
+  text-align: left;
+  margin-left: 51px;
+  padding-right: 250px;
+  font-size: 26px;
+  border: 1px solid rgb(170, 170, 170);
+  border-radius: 4px;
+}
+
+.komin {
+  color: gray;
+  text-align: left;
+  padding-left: 310px;
+  font-size: 15px;
+  display: inline-block;
+  margin-top: 10px;
+  position: absolute;
+}
+.inp_f {
+  color: lightgrey;
+  font-size: 40px;
+  padding-bottom: 50px;
+  margin-left: 10px;
+  border: 1px solid rgb(170, 170, 170);
+  border-radius: 4px;
+  margin-left: 411px;
+}
+
+.chick {
+  display: inline-block;
+  text-align: left;
+  padding-left: 410px;
+  color: gray;
+}
+.p12 {
+  margin-left: 20px;
+  color: gray;
+}
+
+.btn123 {
+  border-radius: 5px;
+  background-color: #fab900;
+  color: black;
+  margin-left: 410px;
+  width: 220px;
+  height: 45px;
+  cursor: pointer;
+  border: none;
+}
+.button {
+  width: 50px;
+}

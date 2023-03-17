@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { AiOutlineStar } from "react-icons/ai";
-import { PRODUCT ,REVIEWS_OF_PRODUCT} from "../utils/urls";
+import { PRODUCT, REVIEWS_OF_PRODUCT } from "../utils/urls";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Menu from "../components/Menu";
 import "../css/Detail.css";
 import { useNavigate } from "react-router-dom";
+import Comments from "../components/Comments";
+import "../css/Comments.css";
 
 const ProductDetail = () => {
   const [product, setProduct] = useState();
@@ -122,18 +124,40 @@ const ProductDetail = () => {
           <div className="tabs">
             <div className="tabs-columns">
               <div className="tabs-column is-25">
-                <p>Обзор</p>
+                <p className="tabs_pp">Обзор</p>
               </div>
               <div className="tabs-column is-25">
-                <p>Отзывы</p>
+                <p className="tabs_pp">Отзывы</p>
               </div>
               <div className="tabs-column is-25">
-                <p>Характеристики</p>
+                <p className="tabs_pp">Характеристики</p>
               </div>
               <div className="tabs-column is-25">
-                <p>Аксессуары</p>
+                <p className="tabs_pp">Аксессуары</p>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="product-info__information">
+          <div className="comment_section">
+            <div className="comment_columns">
+              <div className="comment_column comment_is-40">
+                <p className="kommentariy">Комментарий</p>
+              </div>
+              <div className="comment_column comment_is-60">
+                <div className="comment_input ">
+                  <textarea
+                    type="text"
+                    name=""
+                    id=""
+                    className="comment_inp"
+                    placeholder="Ваши впечатления"
+                  />
+                </div>
+              </div>
+            </div>
+            <br />
+            <hr />
           </div>
         </div>
 

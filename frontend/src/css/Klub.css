@@ -1,4 +1,4 @@
-.Klub-text{
+/* .Klub-text{
     padding-left: 230px;
     font-weight: 500;
     margin: auto;
@@ -58,4 +58,63 @@
     cursor: pointer;
     border-radius: 5px;
     border: none;
+} */
+.Klub-text {
+  padding-left: 230px;
+  font-weight: 500;
+  margin: auto;
+  text-align: left;
+  color: #fab900;
+}
+.Klub-words-1 {
+  padding-left: 250px;
+  text-align: left;
+  color: grey;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.Klub-words-2 {
+  text-align: left;
+  color: grey;
+  padding-left: 235px;
+}
+.Klub-words-3 {
+  text-align: left;
+  padding-left: 235px;
+}
+.Klub-words-3:hover {
+  color: #fab900;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.Klub-word-4 {
+  position: absolute;
+  text-align: left;
+  padding-left: 235px;
+  padding-right: 290px;
+  color: grey;
+  font-family: "Roboto Condensed", sans-serif;
+  padding-top: 20px;
+}
+.Klub-img {
+  text-align: left;
+  padding-left: 235px;
+}
+.boxes {
+  border: 1px black solid;
+  text-align: center;
+  margin-right: 240px;
+  margin-left: 1050px;
+  margin-top: 10px;
+  padding: 20px;
+  color: grey;
+}
+.button {
+  margin-right: 110px;
+  margin-left: 40px;
+  background-color: #fab900;
+  width: 105px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
 }

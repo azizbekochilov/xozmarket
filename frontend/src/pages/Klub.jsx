@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import Menu from "./Menu";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Menu from "../components/Menu";
 import '../css/Klub.css'
 
 const Klub = () => {
