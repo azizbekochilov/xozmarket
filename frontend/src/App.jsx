@@ -5,7 +5,6 @@ import ProductDetail from "./pages/ProductDetail";
 import FooterIdea from './pages/FooterIdea'
 import Products from "./pages/Products";
 import Master from "./pages/Master";
-import MasterDetail from "./pages/MasterDetail";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
 import Oforma from "./pages/Oforma";
@@ -27,7 +26,6 @@ function App() {
       <Route path="/products/:id" element={<Products />} />
       <Route path="/product/:id" element={<ProductDetail />} />
       <Route path="/master" element={<Master />} />
-      <Route path="/masterdetail/:id" element={<MasterDetail />} />
       <Route path="/sign-up" element={<SignUp />} />
       <Route path="/sign-in" element={<SignIn />} />
       <Route path="/oforma" element={<Oforma />} />

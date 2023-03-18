@@ -1,7 +1,6 @@
 import React from "react";
 
 function MasterMadal({master, setShow}) {
-    console.log(master)
     return (
         <div class="shadow">
             <div class="modal">
