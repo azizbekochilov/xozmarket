@@ -23,17 +23,19 @@
 
 .ex {
     position: absolute;
-    margin-left: 230px;
+    margin-left: 270px;
     margin-top: 7px;
     font-weight: bolder;
     font-size: 20px;
     cursor: pointer;
-    color: aliceblue;
+    color: black;
 } 
 
 .favorites__box_img {
-    width: 250px;
-    height: 300px;
+    width: 220px;
+    height: 280px;
+    margin-top: 15px;
+    margin-left: 40px;
 }
 
 .favorites__box_name {
@@ -41,9 +43,10 @@
 }
 
 .favorites__box_boxes {
+    width: 300px;
+    height: 480px;
     margin-left: 80px;
     border: 1px rgba(128, 128, 128, 0.386) solid;
-
 }
 
 .favorites__box_btn {
@@ -65,4 +68,14 @@
 }
 .favorites__box_btn_btn:hover {
     background-color: #E6B10A;
+}
+
+.favorites__box_name_1h {
+    text-align: start;
+    width: 300px;
+    padding-left: 15px;
+}
+
+.buscet__boxes_h1 {
+    width: 800px;
 }

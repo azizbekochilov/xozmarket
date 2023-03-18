@@ -17,10 +17,15 @@ function Master() {
     const [master, setMaster] = useState({})
     const [show, setShow] = useState(false)
 
-    useEffect(() => {
+    const loadMasters = () => {
         axios.get(MASTERS)
             .then(res => setMasters(res.data.data))
+    }
+
+    useEffect(() => {
+        loadMasters()
     }, [])
+
 
     const showModal = master => {
         setMaster(master)
@@ -32,7 +37,7 @@ function Master() {
             <Navbar />
             <Menu />
             <div className="master">
-                {show ? <MasterMadal setShow={setShow} master={master} /> : ""}
+                {show ? <MasterMadal setShow={setShow} master={master}  setMasters={setMasters}/>: ""}
                 <h1 className="master_h1">Мастеры</h1>
                 <div className="master__box">
                     {masters && masters.map(master => (

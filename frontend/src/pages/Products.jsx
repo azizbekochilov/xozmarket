@@ -11,7 +11,7 @@ import { PRODUCTS } from "../utils/urls";
 
 function Products() {
 
-    const [ products, setProducts] = useState([])
+    const [products, setProducts] = useState([])
     const [catProduct, setCatProduct] = useState([])
     const [category, setCategory] = useState('')
     const params = useParams()

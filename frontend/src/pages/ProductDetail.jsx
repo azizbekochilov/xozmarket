@@ -17,6 +17,33 @@ const ProductDetail = () => {
   const [review, setReview] = useState([]);
   const [user] = useState(JSON.parse(localStorage.getItem("user")) || null);
 
+  const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) || [])
+
+
+  const addProduct = () => {
+    let isAuthenticated = localStorage.getItem('user') && localStorage.getItem('jwt')
+
+    if (isAuthenticated) {
+      let hasItem = cart.filter(item => item.product.id === product.id)[0]
+      if (hasItem) {
+        setCart([...cart.filter(item => item.product.id !== hasItem.product.id), {
+          ...hasItem,
+          count: hasItem.count + 1
+        }])
+        return
+      }
+      setCart([...cart, { product, count: 1 }])
+      setTimeout(() => navigate('/buscet'), 200)
+    } else {
+       navigate('/sign-in')
+    }
+  }
+
+
+  useEffect(() => {
+    localStorage.setItem('cart', JSON.stringify(cart))
+  }, [cart])
+
 
   async function addReview(e) {
     e.preventDefault();
@@ -32,7 +59,7 @@ const ProductDetail = () => {
           })
           .then((res) => {
             setReview("");
-            loadReviews();
+            // loadReviews();
           });
       } else {
         alert("Запольните поля");
@@ -54,22 +81,19 @@ const ProductDetail = () => {
   }, []);
 
 
-  const loadReviews = () => {
-    axios
-      .get(REVIEWS_OF_PRODUCT.replace("productId", params.id))
-      .then((res) => setReviews(res.data.data));
-  };
+  // const loadReviews = () => {
+  //   axios
+  //     .get(REVIEWS_OF_PRODUCT.replace("productId", params.id))
+  //     .then((res) => setReviews(res.data.data));
+  // };
 
-  
-  useEffect(() => {
-    loadReviews();
-  }, []);
 
-  
+  // useEffect(() => {
+  //   loadReviews();
+  // }, []);
+
+
   if (product) {
-
-
-    
     return (
       <div>
         <Navbar />
@@ -92,7 +116,7 @@ const ProductDetail = () => {
                 <div className="product-rating"></div>
               </div>
               <div className="product-column is-30 amir">
-                <div className="product-favorites">
+                <div className="product-favorites" >
                   <AiOutlineStar />
                   <p>Избранное</p>
                 </div>
@@ -125,7 +149,10 @@ const ProductDetail = () => {
                       </h1>
                     </div>
                     <div className="product-order">
-                      <button className="product__button">Заказать</button>
+                      <button
+                        className="product__button"
+                        onClick={() => addProduct()}
+                      >Заказать</button>
                     </div>
                   </div>
                 </div>

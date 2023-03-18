@@ -3,11 +3,16 @@ import {Link} from "react-router-dom"
 import "../css/HomeAd.css";
 
 const HomeAd = ({products}) => {
+
+  const a = products.map((product) =>
+  <h1>{product}</h1>
+  )
+
   return (
     <div className="bestseller-part">
       <h2>Популярные товары</h2>
       <div className="main-div">
-        {products.map(product => (
+      {products.map(product => (
           <div className="ad-product">
           <div className="top">
             <div className="bestseller-tag">
@@ -29,7 +34,7 @@ const HomeAd = ({products}) => {
           </div>
         </div>
         ))}
-    </div>
+    </div> 
   </div>
   );
 };
