@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_masters",
+  "info": {
+    "singularName": "order-master",
+    "pluralName": "order-masters",
+    "displayName": "Order Master",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "master": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::master.master"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "total": {
+      "type": "biginteger"
+    },
+    "days": {
+      "type": "biginteger"
+    }
+  }
+}
