@@ -45,61 +45,61 @@ const Footer = () => {
                 <BsSearch />
               </div>
             </div>
-            <div class="footer_menu_links ftr-columns">
-              <ul class="footer_menu_links__ul ftr-column ftr-is-50">
-                <li class="footer_menu_links__li">
+            <div className="footer_menu_links ftr-columns">
+              <ul className="footer_menu_links__ul ftr-column ftr-is-50">
+                <li className="footer_menu_links__li">
                   <Link to="/about">
                     <a>О компании</a>
                   </Link>{" "}
                 </li>
 
-                <li class="footer_menu_links__li">
+                <li className="footer_menu_links__li">
                   <Link to="/about">
                     <a>Акции и распродажи</a>
                   </Link>
                 </li>
 
-                <li class="footer_menu_links__li">
+                <li className="footer_menu_links__li">
                   <Link to="/about">
                     <a>Новости</a>
                   </Link>
                 </li>
 
-                <li class="footer_menu_links__li">
+                <li className="footer_menu_links__li">
                   <Link to="/about">
                     <a>Контакты</a>
                   </Link>
                 </li>
 
-                <li class="footer_menu_links__li">
+                <li className="footer_menu_links__li">
                   <Link to="/about">
                     <a>Партнеры</a>
                   </Link>
                 </li>
               </ul>
-              <ul class="footer_menu_links__ul ftr-column ftr-is-50">
+              <ul className="footer_menu_links__ul ftr-column ftr-is-50">
                 {" "}
-                <li class="footer_menu_links__li">
+                <li className="footer_menu_links__li">
                   <Link to="/oforma">
                     <a>Договор оферты</a>
                   </Link>
                 </li>
-                <li class="footer_menu_links__li">
+                <li className="footer_menu_links__li">
                   <Link to="/dannix">
                     <a>Политика персональных данных</a>{" "}
                   </Link>
                 </li>
-                <li class="footer_menu_links__li">
+                <li className="footer_menu_links__li">
                   <Link to="/oplata">
                     <a>Доставка и Оплата</a>{" "}
                   </Link>
                 </li>
-                <li class="footer_menu_links__li">
+                <li className="footer_menu_links__li">
                   <Link to="/kredit">
                     <a>Кредит</a>{" "}
                   </Link>
                 </li>
-                <li class="footer_menu_links__li">
+                <li className="footer_menu_links__li">
                   <Link to="/karta">
                     <a>Карта сайта</a>{" "}
                   </Link>
@@ -108,13 +108,13 @@ const Footer = () => {
             </div>
           </div>
           <div className="ftr-column ftr-is-33 footer-right">
-            <div class="footer__contact">
-              <a href="tel:+998914422317" class="footer__tel">
+            <div className="footer__contact">
+              <a href="tel:+998914422317" className="footer__tel">
                 +998(91)442-23-17
               </a>
             </div>
             <div className="footer__addres">
-              <a href="" class="footer__address">
+              <a href="" className="footer__address">
                 Bukhara - MONDAY_Labs
               </a>
             </div>

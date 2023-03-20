@@ -2,8 +2,8 @@ import React from "react";
 import "../css/Navbar.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserGroup, faStar, faMagnifyingGlass, faBasketShopping} from "@fortawesome/free-solid-svg-icons";
-import {BsPersonSquare} from "react-icons/bs"
+import { faUserGroup, faStar, faMagnifyingGlass, faBasketShopping } from "@fortawesome/free-solid-svg-icons";
+import { BsPersonSquare } from "react-icons/bs"
 
 function Navbar() {
   return (
@@ -24,7 +24,7 @@ function Navbar() {
         </div>
 
         <div className="navbar__center">
-          <Link className="navbar__center_link" to="/">
+          <Link className="navbar__center_link" to="/favorites">
             <FontAwesomeIcon icon={faStar} /> Избранное
           </Link>
 
@@ -67,20 +67,22 @@ function Navbar() {
           </div>
 
           <div className="nav__end">
-            <Link to='/'>
+            <Link to='/buscet' >
               <div className="nav__end_link">
                 <FontAwesomeIcon icon={faBasketShopping} className='nav__end_link_icon' />
                 <p>Ваша <br /> корзина</p>
               </div>
-
             </Link>
-            <Link to="/master" className="nav__end_link">
-              <div className="nav__end_master">
-                <BsPersonSquare className="nav__end_icon" size={20} />
-                <h1 className="nav__end_master-h1">Мастеры</h1>
-              </div>
+        
+
+          <div className="nav__end__master">
+            <Link to="/master" className="nav__end_link1">
+              <BsPersonSquare className="nav__end_icon" size={20} />
+              <h1 className="nav__end_master-h1">Мастеры</h1>
             </Link>
           </div>
+  </div>
+          
         </div>
       </div>
 

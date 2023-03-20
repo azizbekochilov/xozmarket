@@ -21,6 +21,7 @@ function Products() {
       .then((res) => setCategory(res.data.data));
   };
 
+
   useEffect(() => {
     getCategory();
   }, []);

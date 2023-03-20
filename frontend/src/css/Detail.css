@@ -38,6 +38,8 @@
   padding: 0px;
   text-align: center;
   padding-bottom: 25px;
+  font-size: 15px;
+  font-weight: 700;
 }
 .tabs_pp {
   color: #4b4b4b;
@@ -46,10 +48,6 @@
 .tabs_pp:hover {
   color: #f6b607;
   transition: 0.4s;
-}
-
-.is-25 {
-  width: 25%;
 }
 
 .product-column {
@@ -68,6 +66,19 @@
 
 .is-25 {
   width: 25%;
+}
+.obzor{
+  padding-left: 90px;
+}
+.akksesuar{
+  padding-right: 50px;
+}
+.is-30{
+  width: 30%;
+  
+}
+.is-20{
+  width: 20%;
 }
 
 .product-category__p {

@@ -8,8 +8,6 @@ import Footer from "../components/Footer";
 import Menu from "../components/Menu";
 import "../css/Detail.css";
 import { useNavigate } from "react-router-dom";
-import Comments from "../components/Comments";
-import "../css/Comments.css";
 
 const ProductDetail = () => {
   const [product, setProduct] = useState();
@@ -17,7 +15,39 @@ const ProductDetail = () => {
   const navigate = useNavigate();
   const [reviews, setReviews] = useState([]);
   const [review, setReview] = useState([]);
-  const [user] = useState(JSON.parse(localStorage.getItem("user")) || null);
+  const [user] = useState(JSON.parse(localStorage.getItem("user")), null);
+  const [cart, setCart] = useState(
+    JSON.parse(localStorage.getItem("cart")),
+    []
+  );
+
+  const addProduct = () => {
+    let isAuthenticated =
+      localStorage.getItem("user") && localStorage.getItem("jwt");
+
+    if (isAuthenticated) {
+      let hasItem = cart.filter((item) => item.product.id === product.id)[0];
+      if (hasItem) {
+        setCart([
+          ...cart.filter((item) => item.product.id !== hasItem.product.id),
+          {
+            ...hasItem,
+            count: hasItem.count + 1,
+          },
+        ]);
+        return;
+      }
+      setCart([...cart, { product, count: 1 }]);
+      setTimeout(() => navigate("/buscet"), 200);
+    } else {
+      navigate("/sign-in");
+    }
+  };
+
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
+
   async function addReview(e) {
     e.preventDefault();
     if (user) {
@@ -32,7 +62,7 @@ const ProductDetail = () => {
           })
           .then((res) => {
             setReview("");
-            loadReviews();
+            // loadReviews();
           });
       } else {
         alert("Запольните поля");
@@ -41,19 +71,23 @@ const ProductDetail = () => {
       navigate("/sign-in");
     }
   }
+
   useEffect(() => {
     axios
       .get(PRODUCT.replace("id", params.id))
       .then((res) => setProduct(res.data.data));
   }, []);
-  const loadReviews = () => {
-    axios
-      .get(REVIEWS_OF_PRODUCT.replace("productId", params.id))
-      .then((res) => setReviews(res.data.data));
-  };
-  useEffect(() => {
-    loadReviews();
-  }, []);
+
+  // const loadReviews = () => {
+  //   axios
+  //     .get(REVIEWS_OF_PRODUCT.replace("productId", params.id))
+  //     .then((res) => setReviews(res.data.data));
+  // };
+
+  // useEffect(() => {
+  //   loadReviews();
+  // }, []);
+
   if (product) {
     return (
       <div>
@@ -61,31 +95,29 @@ const ProductDetail = () => {
         <Menu />
         <div className="ProductDetail">
           <section className="product-section">
-            <div className="">
-              <div className="product-columns">
-                <div className="product-column is-70">
-                  <div className="product-category">
-                    <p className="product-category__p">
-                      {product.attributes.category.data.attributes.title}
-                    </p>
-                  </div>
-                  <div className="">
-                    <h1 className="product-name">
-                      {product.attributes.title} <br />
-                      (арт.381)
-                    </h1>
-                  </div>
-                  <div className="product-rating"></div>
+            <div className="product-columns">
+              <div className="product-column is-70">
+                <div className="product-category">
+                  <p className="product-category__p">
+                    {product.attributes.category.data.attributes.title}
+                  </p>
                 </div>
-                <div className="product-column is-30 amir">
-                  <div className="product-favorites">
-                    <AiOutlineStar />
-                    <p>Избранное</p>
-                  </div>
-                  <div className="product-compare">
-                    <input type="checkbox" className="" />
-                    <p className="">Сравнить</p>
-                  </div>
+                <div className="">
+                  <h1 className="product-name">
+                    {product.attributes.title} <br />
+                    (арт.381)
+                  </h1>
+                </div>
+                <div className="product-rating"></div>
+              </div>
+              <div className="product-column is-30 amir">
+                <div className="product-favorites">
+                  <AiOutlineStar />
+                  <p>Избранное</p>
+                </div>
+                <div className="product-compare">
+                  <input type="checkbox" className="" />
+                  <p className="">Сравнить</p>
                 </div>
               </div>
             </div>
@@ -101,7 +133,6 @@ const ProductDetail = () => {
                   />
                 </div>
               </div>
-
               <div className="product-column is-50">
                 <div className="product-left">
                   <div className="product-box">
@@ -112,7 +143,12 @@ const ProductDetail = () => {
                       </h1>
                     </div>
                     <div className="product-order">
-                      <button className="product__button">Заказать</button>
+                      <button
+                        className="product__button"
+                        onClick={() => addProduct()}
+                      >
+                        Заказать
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -123,41 +159,19 @@ const ProductDetail = () => {
         <div className="product-info">
           <div className="tabs">
             <div className="tabs-columns">
-              <div className="tabs-column is-25">
-                <p className="tabs_pp">Обзор</p>
+              <div className="tabs-column is-30 obzor">
+                <p>Обзор</p>
               </div>
-              <div className="tabs-column is-25">
-                <p className="tabs_pp">Отзывы</p>
+              <div className="tabs-column is-20">
+                <p>Отзывы</p>
               </div>
-              <div className="tabs-column is-25">
-                <p className="tabs_pp">Характеристики</p>
+              <div className="tabs-column is-20">
+                <p>Характеристики</p>
               </div>
-              <div className="tabs-column is-25">
-                <p className="tabs_pp">Аксессуары</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="product-info__information">
-          <div className="comment_section">
-            <div className="comment_columns">
-              <div className="comment_column comment_is-40">
-                <p className="kommentariy">Комментарий</p>
-              </div>
-              <div className="comment_column comment_is-60">
-                <div className="comment_input ">
-                  <textarea
-                    type="text"
-                    name=""
-                    id=""
-                    className="comment_inp"
-                    placeholder="Ваши впечатления"
-                  />
-                </div>
+              <div className="tabs-column is-30 akksesuar">
+                <p>Аксессуары</p>
               </div>
             </div>
-            <br />
-            <hr />
           </div>
         </div>
 

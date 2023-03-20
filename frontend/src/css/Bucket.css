@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.buscet__h1 {
+    color: #f6b607;
+    margin: 100px 330px;
+}
+
+.buscet__box {
+    width: 100%;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+.buscet__boxes {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    margin-bottom: 50px;
+    padding-left: 150px;
+}
+
+.buscet__boxes_img {
+    width: 200px;
+    height: 200px;
+}
+
+/* .buscet__boxes_h1 {
+    padding: 50px;
+} */
+
+.buscet__boxes_p {
+    color: #f6b607;
+    margin-top: 5px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.buscet__boxes_plas {
+    display: flex;
+    align-items: center;
+}
+
+.buscet__boxes_plas_h1 {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.buscet__boxes_plas_btn1 {
+    width: 25px;
+    height: 25px;
+}
+
+.buscet__boxes_btn {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.buscet__boxes_btn1 {
+    width: 122px;
+    height: 35px;
+    background-color: rgba(27, 207, 27, 0.699);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    position: absolute;
+    font-size: 16px;
+} 
+
+.buscet__boxes_btn2 {
+    width: 122px;
+    height: 35px;
+    background-color: rgba(231, 46, 46, 0.884);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 80px;
+    font-size: 16px;
+}
