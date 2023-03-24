@@ -2,27 +2,46 @@ import React from "react";
 import "../css/Navbar.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserGroup, faStar, faMagnifyingGlass, faBasketShopping, } from "@fortawesome/free-solid-svg-icons";
+import {
+  faUserGroup,
+  faStar,
+  faMagnifyingGlass,
+  faBasketShopping,
+} from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { PRODUCTS } from "../utils/urls";
 
-function Navbar({ categories }) {
-
-  const [product, setProduct] = useState([])
+function Navbar({ categories, setProducts }) {
+  const [product, setProduct] = useState([]);
+  const [value, setValue] = useState('')
+  const filter = (filters) => {
+    axios
+      .get(PRODUCTS + `&filters[${filters.key}] [title]$eq=${filters.value}`)
+      .then((res) => setProducts(res.data.data))
+      .catch((err) => console.error(err));
+  };
+  const search = (value) => {
+    axios
+      .get(PRODUCTS + `&filters[name][$contains]=${value}`)
+      .then((res) => setProducts(res.data.data))
+      .catch((err) => console.error(err));
+  };
 
   useEffect(() => {
     // axios.get(http://localhost:1337/api/categories)
     //   .then((res) => console.log(res.data.data))
 
-    axios.get(`http://localhost:1337/api/products?populate=image`)
-      .then((res) => setProduct(res.data.data))
-  }, [])
+    axios
+      .get(`http://localhost:1337/api/products?populate=image`)
+      .then((res) => setProduct(res.data.data));
+  }, []);
 
   useEffect(() => {
     if (product && product[0]) {
       console.log(product[0]);
     }
-  }, [product])
+  }, [product]);
 
   return (
     <React.StrictMode>
@@ -60,9 +79,12 @@ function Navbar({ categories }) {
       <div className="nav">
         <div className="navv">
           <div className="nav__start">
-            <Link to="/klub" >
+            <Link to="/klub">
               <div className="nav__start_link">
-                <FontAwesomeIcon icon={faUserGroup} className='nav__start_link_icon' />
+                <FontAwesomeIcon
+                  icon={faUserGroup}
+                  className="nav__start_link_icon"
+                />
                 <ul className="nav__start_link_ul">
                   <li>Клуб</li>
                   <li>Хозмаркет</li>
@@ -73,39 +95,52 @@ function Navbar({ categories }) {
 
           <div className="nav__img">
             <Link to="/">
-              <img className="nav__img_img" src="https://xozm.ru/local/templates/main/img/svg/logo.svg" />
+              <img
+                className="nav__img_img"
+                src="https://xozm.ru/local/templates/main/img/svg/logo.svg"
+              />
             </Link>
           </div>
 
           <div className="nav__input">
-            <input type="text" placeholder="Шуруповерт BOSCH" className="nav__input_inp" />
-            <Link className="nav__input_link" to='/'>
+            <input
+              type="text"
+              placeholder="Шуруповерт BOSCH"
+              className="nav__input_inp"
+              onInput={(e) => setValue(e.target.value)}
+              onChange={() => search(value)}
+              value={value}
+            />
+            <Link className="nav__input_link" to="/">
               <FontAwesomeIcon icon={faMagnifyingGlass} />
             </Link>
           </div>
 
           <div className="nav__end">
-            <Link to='/'>
+            <Link to="/">
               <div className="nav__end_link">
-                <FontAwesomeIcon icon={faBasketShopping} className='nav__end_link_icon' />
-                <p>Ваша <br /> корзина</p>
+                <FontAwesomeIcon
+                  icon={faBasketShopping}
+                  className="nav__end_link_icon"
+                />
+                <p>
+                  Ваша <br /> корзина
+                </p>
               </div>
-              
             </Link>
           </div>
         </div>
       </div>
 
       <div>
-        {product && product.map(item => (
-          <div>
-
-            
-            {/* <h1>{item.attributes.title}</h1> */}
-            {/* <h1>{item.attributes.price}</h1> */}
-          {/* <img src={`http://localhost:1337${item.attributes.image.data[0].attributes.url}`} width="100px" alt="" /> */}
-          </div>
-        ))}
+        {product &&
+          product.map((item) => (
+            <div>
+              {/* <h1>{item.attributes.title}</h1> */}
+              {/* <h1>{item.attributes.price}</h1> */}
+              {/* <img src={`http://localhost:1337${item.attributes.image.data[0].attributes.url}`} width="100px" alt="" /> */}
+            </div>
+          ))}
       </div>
     </React.StrictMode>
   );

@@ -9,6 +9,7 @@ const Klub = () => {
       <Navbar />
       <Menu />
       <div className="">
+
         
       </div>
 
